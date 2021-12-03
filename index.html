@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar with hover effect </title> 
+  <style>
+
+#body
+{
+color: #999999;
+transition: all 0.2s;
+perspective: 35em;
+background-image: linear-gradient(315deg, #7fa83 0%, #0d324d 74%);
+height:100px;  
+Overflow:hidden;
+}
+h1,h2,h3
+{
+    font-family: monospace;
+}
+.menu
+{
+    padding:1em;
+    perspective: 500px;
+
+}
+nav ul
+{
+list-style: none;
+padding: 1em;
+transform-style:preserve-3d;
+transition: all 0.2s;
+}
+nav ul li
+{
+    margin: 0 0 0.5em 0;
+    position:relative;
+    color: #222222;
+    font-family: monospace;
+    transition: all 0.2s;
+    transform-style: preserve-3d;
+    box-shadow: rgba(0, 0,0,0.2) 0px 60px 40px -7px;
+    border-radius: 6px;
+}
+nav ul li :hover
+{
+    background-color: #861657;
+    background-image: linear-gradient(325deg ,#861657 0%,#ffa69f 74%);
+    transform: translateZ(14px) translateY(4deg);
+}
+nav ul li :hover ul li
+{
+    margin-left: 0.325em;
+    transition: all 0.2s;
+}
+
+nav ul li a
+{
+    display: block;
+    padding: 0.5em;
+    min-height: 2.5em;
+    line-height:2.5em;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+nav ul li a:hover
+{
+    color: white;
+}
+nav > ul > li ul
+{
+    opacity: 0;
+    visibility:hidden;
+    position: absolute;
+    left: 83%;
+    top: 0;
+    padding-left: 2em;
+    min-width: 300px;
+    transition: all 0.2s;
+    transform:translateZ(-5px) translateY( -10 deg )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="menubar">
+
+        <ul>
+            <li><a href=""> Home</a></li>
+            <li><a href=""> Services</a></li>
+            <ul>
+                
+                <li>
+                    <a href=""><h3> Item 1</h3></a>
+                </li>
+                <li>
+                    <a href=""><h3>Item 2</h3></a>
+                </li>
+                <li>
+                    <a href=""><h3> Item 3</h3></a>
+                </li>
+
+            </ul>
+          
+            <li><a href=""> About us</a></li>
+            <ul>
+                
+                <li>
+                    <a href="">conatct</a>
+                </li>
+                <li>
+                    <a href=""> Help</a>
+                </li>
+                
+
+            </ul>
+            <li><a href=""> Forum </a></li>
+
+        </ul>
+    </div>
+</body>
+</html>
